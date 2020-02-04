@@ -1,0 +1,33 @@
+{
+  "name": "spidergap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "@types/jest": "^25.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "test": "jest",
+    "eslint": "eslint **/*.js --ignore-pattern node_modules/",
+    "eslint:fix": "eslint --fix **/*.ts --ignore-pattern node_modules/",
+    "test:code": "tsc app.ts && node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
